@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Constellation - Sanjyot</title>
+    <meta name="description" content="Explore my technical skills constellation - an interactive visualization of frontend, backend, tools, and design competencies with proficiency indicators." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevportfol2775back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="hero_landing_zone.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">DP</span>
+                        </div>
+                        <span class="font-poppins font-semibold text-lg text-text-primary">Sanjyot</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_landing_zone.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Home</a>
+                        <a href="about_narrative.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">About</a>
+                        <a href="skills_constellation.html" class="text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Skills</a>
+                        <a href="services_marketplace.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Services</a>
+                        <a href="achievement_gallery.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Achievements</a>
+                        <a href="contact_command_center.html" class="btn-primary text-sm">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="bg-surface p-2 rounded-md text-text-secondary hover:text-accent hover:bg-border-light transition-colors duration-200">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border-light">
+                <a href="hero_landing_zone.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Home</a>
+                <a href="about_narrative.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">About</a>
+                <a href="skills_constellation.html" class="text-accent block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="services_marketplace.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Services</a>
+                <a href="achievement_gallery.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Achievements</a>
+                <a href="contact_command_center.html" class="btn-primary block text-center mx-3 mt-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Constellation Section -->
+    <section class="pt-24 pb-16 min-h-screen bg-gradient-to-br from-primary-50 via-background to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h1 class="font-poppins font-bold text-4xl sm:text-5xl lg:text-6xl text-text-primary mb-6">
+                    Skills <span class="text-gradient">Constellation</span>
+                </h1>
+                <p class="text-text-secondary text-lg max-w-3xl mx-auto mb-8">
+                    Navigate through my technical universe where each skill represents a star in my professional constellation. 
+                    Hover over technologies to discover proficiency levels and recent implementations.
+                </p>
+                
+                <!-- Filter Controls -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="skill-filter active" data-category="all">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                        All Skills
+                    </button>
+                    <button class="skill-filter" data-category="frontend">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Frontend
+                    </button>
+                    <button class="skill-filter" data-category="backend">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"/>
+                        </svg>
+                        Backend
+                    </button>
+                    <button class="skill-filter" data-category="tools">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        Tools
+                    </button>
+                    <button class="skill-filter" data-category="design">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2-2-2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18l-2-2 2-2"/>
+                        </svg>
+                        Design
+                    </button>
+                </div>
+            </div>
+
+            <!-- Desktop Constellation View -->
+            <div class="hidden lg:block relative">
+                <div class="constellation-container relative w-full h-96 bg-gradient-to-br from-surface/50 to-primary-50/30 rounded-2xl border border-border-light overflow-hidden" id="constellation">
+                    <!-- Animated Background -->
+                    <div class="absolute inset-0 opacity-20">
+                        <div class="absolute top-10 left-10 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                        <div class="absolute top-20 right-20 w-1 h-1 bg-secondary rounded-full animate-pulse delay-500"></div>
+                        <div class="absolute bottom-20 left-20 w-1.5 h-1.5 bg-accent rounded-full animate-pulse delay-1000"></div>
+                        <div class="absolute bottom-10 right-10 w-2 h-2 bg-primary rounded-full animate-pulse delay-1500"></div>
+                    </div>
+
+                    <!-- Skill Nodes -->
+                    <div class="skill-node advanced frontend" data-skill="react" style="top: 20%; left: 15%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">React</span>
+                    </div>
+
+                    <div class="skill-node advanced frontend" data-skill="vue" style="top: 35%; left: 25%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">Vue.js</span>
+                    </div>
+
+                    <div class="skill-node advanced frontend" data-skill="css3" style="top: 15%; left: 35%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">CSS3</span>
+                    </div>
+
+                    <div class="skill-node advanced backend" data-skill="nodejs" style="top: 25%; left: 65%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">Node.js</span>
+                    </div>
+
+                    <div class="skill-node advanced backend" data-skill="python" style="top: 40%; left: 75%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">Python</span>
+                    </div>
+
+                    <div class="skill-node intermediate backend" data-skill="postgresql" style="top: 55%; left: 70%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">PostgreSQL</span>
+                    </div>
+
+                    <div class="skill-node advanced tools" data-skill="git" style="top: 60%; left: 20%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">Git</span>
+                    </div>
+
+                    <div class="skill-node intermediate tools" data-skill="docker" style="top: 70%; left: 35%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">Docker</span>
+                    </div>
+
+                    <div class="skill-node intermediate tools" data-skill="aws" style="top: 75%; left: 50%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">AWS</span>
+                    </div>
+
+                    <div class="skill-node advanced design" data-skill="figma" style="top: 50%; left: 15%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">Figma</span>
+                    </div>
+
+                    <div class="skill-node emerging frontend" data-skill="typescript" style="top: 45%; left: 45%;">
+                        <div class="node-circle">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-8 h-8" />
+                        </div>
+                        <span class="node-label">TypeScript</span>
+                    </div>
+
+                    <!-- Connection Lines -->
+                    <svg class="absolute inset-0 w-full h-full pointer-events-none" id="connection-lines">
+                        <!-- Lines will be drawn dynamically -->
+                    </svg>
+                </div>
+
+                <!-- Skill Detail Modal -->
+                <div class="skill-detail-modal hidden" id="skill-modal">
+                    <div class="modal-content">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-surface rounded-lg flex items-center justify-center">
+                                    <img id="modal-icon" src alt class="w-8 h-8" />
+                                </div>
+                                <div>
+                                    <h3 class="font-poppins font-semibold text-xl" id="modal-title">Skill Name</h3>
+                                    <span class="text-text-secondary text-sm" id="modal-category">Category</span>
+                                </div>
+                            </div>
+                            <button class="text-text-secondary hover:text-accent" id="close-modal">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-medium">Proficiency Level</span>
+                                    <span class="text-sm text-text-secondary" id="modal-proficiency">90%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full transition-all duration-1000" id="modal-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="text-sm font-medium block mb-2">Experience</span>
+                                <span class="text-text-secondary" id="modal-experience">5+ years</span>
+                            </div>
+                            
+                            <div>
+                                <span class="text-sm font-medium block mb-2">Recent Projects</span>
+                                <p class="text-text-secondary text-sm" id="modal-projects">Built responsive e-commerce platform, developed component library</p>
+                            </div>
+                            
+                            <div>
+                                <span class="text-sm font-medium block mb-2">Certifications</span>
+                                <div class="flex flex-wrap gap-2" id="modal-certifications">
+                                    <span class="bg-success/10 text-success px-2 py-1 rounded text-xs">React Professional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Card View -->
+            <div class="lg:hidden">
+                <div class="grid gap-6 sm:grid-cols-2">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category-card frontend">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-poppins font-semibold text-lg">Frontend</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="mobile-skill-item" data-skill="react">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-5 h-5" />
+                                        <span class="font-medium">React</span>
+                                    </div>
+                                    <span class="text-sm text-primary font-medium">95%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="vue">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="w-5 h-5" />
+                                        <span class="font-medium">Vue.js</span>
+                                    </div>
+                                    <span class="text-sm text-primary font-medium">90%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="css3">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-5 h-5" />
+                                        <span class="font-medium">CSS3</span>
+                                    </div>
+                                    <span class="text-sm text-primary font-medium">92%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="typescript">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-5 h-5" />
+                                        <span class="font-medium">TypeScript</span>
+                                    </div>
+                                    <span class="text-sm text-accent font-medium">75%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-accent h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-category-card backend">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-poppins font-semibold text-lg">Backend</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="mobile-skill-item" data-skill="nodejs">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-5 h-5" />
+                                        <span class="font-medium">Node.js</span>
+                                    </div>
+                                    <span class="text-sm text-primary font-medium">88%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="python">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-5 h-5" />
+                                        <span class="font-medium">Python</span>
+                                    </div>
+                                    <span class="text-sm text-primary font-medium">85%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="postgresql">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-5 h-5" />
+                                        <span class="font-medium">PostgreSQL</span>
+                                    </div>
+                                    <span class="text-sm text-secondary font-medium">80%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-secondary h-2 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Skills -->
+                    <div class="skill-category-card tools">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-poppins font-semibold text-lg">Tools</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="mobile-skill-item" data-skill="git">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-5 h-5" />
+                                        <span class="font-medium">Git</span>
+                                    </div>
+                                    <span class="text-sm text-primary font-medium">93%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 93%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="docker">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-5 h-5" />
+                                        <span class="font-medium">Docker</span>
+                                    </div>
+                                    <span class="text-sm text-secondary font-medium">78%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-secondary h-2 rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="aws">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" class="w-5 h-5" />
+                                        <span class="font-medium">AWS</span>
+                                    </div>
+                                    <span class="text-sm text-secondary font-medium">82%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-secondary h-2 rounded-full" style="width: 82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design Skills -->
+                    <div class="skill-category-card design">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-poppins font-semibold text-lg">Design</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="mobile-skill-item" data-skill="figma">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-5 h-5" />
+                                        <span class="font-medium">Figma</span>
+                                    </div>
+                                    <span class="text-sm text-primary font-medium">90%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mobile-skill-item" data-skill="adobe">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=100&auto=format&fit=crop" alt="Adobe Creative Suite" class="w-5 h-5 rounded" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                                        <span class="font-medium">Adobe Creative Suite</span>
+                                    </div>
+                                    <span class="text-sm text-secondary font-medium">85%</span>
+                                </div>
+                                <div class="w-full bg-border-light rounded-full h-2">
+                                    <div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Summary Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-poppins font-bold text-3xl text-text-primary mb-4">Technical Proficiency Overview</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    A comprehensive breakdown of my technical expertise across different domains, 
+                    continuously evolving with industry trends and project requirements.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="font-poppins font-bold text-2xl text-primary">12+</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg mb-2">Frontend Technologies</h3>
+                    <p class="text-text-secondary text-sm">Modern frameworks and libraries for creating engaging user interfaces</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="font-poppins font-bold text-2xl text-secondary">8+</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg mb-2">Backend Systems</h3>
+                    <p class="text-text-secondary text-sm">Server-side technologies and database management solutions</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="font-poppins font-bold text-2xl text-accent">15+</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg mb-2">Development Tools</h3>
+                    <p class="text-text-secondary text-sm">Professional tools for version control, deployment, and collaboration</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="font-poppins font-bold text-2xl text-success">6+</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg mb-2">Design Platforms</h3>
+                    <p class="text-text-secondary text-sm">Creative tools for UI/UX design and visual content creation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-poppins font-bold text-3xl text-text-primary mb-4">
+                Ready to Build Something Amazing?
+            </h2>
+            <p class="text-text-secondary text-lg mb-8 max-w-2xl mx-auto">
+                Let's combine these technical skills with your vision to create exceptional digital experiences. 
+                Explore my services or get in touch to discuss your project.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="services_marketplace.html" class="btn-primary inline-flex items-center justify-center space-x-2">
+                    <span>View Services</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                <a href="contact_command_center.html" class="btn-secondary inline-flex items-center justify-center space-x-2">
+                    <span>Start a Project</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .skill-filter {
+            @apply bg-surface border border-border rounded-full px-4 py-2 flex items-center space-x-2 text-text-secondary hover:text-accent hover:border-accent transition-all duration-300 cursor-pointer;
+        }
+        
+        .skill-filter.active {
+            @apply bg-accent text-white border-accent;
+        }
+
+        .skill-node {
+            @apply absolute cursor-pointer transition-all duration-300 transform hover:scale-110;
+        }
+
+        .skill-node.advanced .node-circle {
+            @apply w-16 h-16 bg-primary/20 border-2 border-primary rounded-full flex items-center justify-center shadow-lg hover:shadow-xl;
+        }
+
+        .skill-node.intermediate .node-circle {
+            @apply w-14 h-14 bg-secondary/20 border-2 border-secondary rounded-full flex items-center justify-center shadow-lg hover:shadow-xl;
+        }
+
+        .skill-node.emerging .node-circle {
+            @apply w-12 h-12 bg-accent/20 border-2 border-accent rounded-full flex items-center justify-center shadow-lg hover:shadow-xl;
+        }
+
+        .node-label {
+            @apply absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs font-medium text-text-primary whitespace-nowrap;
+        }
+
+        .skill-category-card {
+            @apply card hover:shadow-strong transition-all duration-300;
+        }
+
+        .mobile-skill-item {
+            @apply cursor-pointer hover:bg-border-light/50 p-2 rounded-lg transition-all duration-200;
+        }
+
+        .skill-detail-modal {
+            @apply fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4;
+        }
+
+        .modal-content {
+            @apply bg-background rounded-xl p-6 max-w-md w-full shadow-strong;
+        }
+
+        .constellation-container {
+            animation: rotate 60s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .skill-node:hover .node-circle {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Skill data
+        const skillData = {
+            react: {
+                title: 'React',
+                category: 'Frontend',
+                proficiency: 95,
+                experience: '5+ years',
+                projects: 'Built responsive e-commerce platform, developed component library, created dashboard applications',
+                certifications: ['React Professional', 'Advanced React Patterns'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+            },
+            vue: {
+                title: 'Vue.js',
+                category: 'Frontend',
+                proficiency: 90,
+                experience: '4+ years',
+                projects: 'Developed SPA applications, created custom Vue plugins, built admin panels',
+                certifications: ['Vue.js Certified Developer'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg'
+            },
+            css3: {
+                title: 'CSS3',
+                category: 'Frontend',
+                proficiency: 92,
+                experience: '6+ years',
+                projects: 'Created responsive designs, implemented animations, built design systems',
+                certifications: ['CSS Grid Master', 'Flexbox Expert'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+            },
+            typescript: {
+                title: 'TypeScript',
+                category: 'Frontend',
+                proficiency: 75,
+                experience: '2+ years',
+                projects: 'Migrated JavaScript projects to TypeScript, implemented type-safe APIs',
+                certifications: ['TypeScript Fundamentals'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+            },
+            nodejs: {
+                title: 'Node.js',
+                category: 'Backend',
+                proficiency: 88,
+                experience: '4+ years',
+                projects: 'Built REST APIs, developed microservices, created real-time applications',
+                certifications: ['Node.js Professional'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+            },
+            python: {
+                title: 'Python',
+                category: 'Backend',
+                proficiency: 85,
+                experience: '3+ years',
+                projects: 'Developed data processing scripts, built web scrapers, created automation tools',
+                certifications: ['Python Developer'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
+            },
+            postgresql: {
+                title: 'PostgreSQL',
+                category: 'Backend',
+                proficiency: 80,
+                experience: '3+ years',
+                projects: 'Designed database schemas, optimized queries, implemented data migrations',
+                certifications: ['PostgreSQL Administration'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+            },
+            git: {
+                title: 'Git',
+                category: 'Tools',
+                proficiency: 93,
+                experience: '6+ years',
+                projects: 'Managed version control for team projects, implemented Git workflows, code reviews',
+                certifications: ['Git Professional'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
+            },
+            docker: {
+                title: 'Docker',
+                category: 'Tools',
+                proficiency: 78,
+                experience: '2+ years',
+                projects: 'Containerized applications, created Docker Compose setups, deployment automation',
+                certifications: ['Docker Fundamentals'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'
+            },
+            aws: {
+                title: 'AWS',
+                category: 'Tools',
+                proficiency: 82,
+                experience: '3+ years',
+                projects: 'Deployed applications on EC2, used S3 for storage, implemented Lambda functions',
+                certifications: ['AWS Cloud Practitioner'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg'
+            },
+            figma: {
+                title: 'Figma',
+                category: 'Design',
+                proficiency: 90,
+                experience: '4+ years',
+                projects: 'Created UI/UX designs, built design systems, collaborated with design teams',
+                certifications: ['Figma Professional'],
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
+            }
+        };
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.skill-filter');
+        const skillNodes = document.querySelectorAll('.skill-node');
+        const skillCards = document.querySelectorAll('.skill-category-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.category;
+                
+                // Update active filter
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter desktop nodes
+                skillNodes.forEach(node => {
+                    if (category === 'all' || node.classList.contains(category)) {
+                        node.style.display = 'block';
+                        node.style.opacity = '1';
+                    } else {
+                        node.style.opacity = '0.3';
+                    }
+                });
+                
+                // Filter mobile cards
+                skillCards.forEach(card => {
+                    if (category === 'all' || card.classList.contains(category)) {
+                        card.style.display = 'block';
+                        card.style.opacity = '1';
+                    } else {
+                        card.style.opacity = '0.3';
+                    }
+                });
+            });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('skill-modal');
+        const closeModal = document.getElementById('close-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalCategory = document.getElementById('modal-category');
+        const modalIcon = document.getElementById('modal-icon');
+        const modalProficiency = document.getElementById('modal-proficiency');
+        const modalProgress = document.getElementById('modal-progress');
+        const modalExperience = document.getElementById('modal-experience');
+        const modalProjects = document.getElementById('modal-projects');
+        const modalCertifications = document.getElementById('modal-certifications');
+
+        // Skill node click handlers
+        document.querySelectorAll('.skill-node, .mobile-skill-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const skillKey = item.dataset.skill;
+                const skill = skillData[skillKey];
+                
+                if (skill) {
+                    modalTitle.textContent = skill.title;
+                    modalCategory.textContent = skill.category;
+                    modalIcon.src = skill.icon;
+                    modalIcon.alt = skill.title;
+                    modalProficiency.textContent = skill.proficiency + '%';
+                    modalProgress.style.width = skill.proficiency + '%';
+                    modalExperience.textContent = skill.experience;
+                    modalProjects.textContent = skill.projects;
+                    
+                    // Update certifications
+                    modalCertifications.innerHTML = skill.certifications.map(cert => 
+                        `<span class="bg-success/10 text-success px-2 py-1 rounded text-xs">${cert}</span>`
+                    ).join('');
+                    
+                    modal.classList.remove('hidden');
+                    
+                    // Animate progress bar
+                    setTimeout(() => {
+                        modalProgress.style.width = skill.proficiency + '%';
+                    }, 100);
+                }
+            });
+        });
+
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+
+        // Draw connection lines (desktop only)
+        function drawConnectionLines() {
+            const svg = document.getElementById('connection-lines');
+            if (!svg) return;
+            
+            const nodes = document.querySelectorAll('.skill-node');
+            svg.innerHTML = '';
+            
+            // Create connections between related skills
+            const connections = [
+                ['react', 'typescript'],
+                ['vue', 'nodejs'],
+                ['nodejs', 'postgresql'],
+                ['git', 'docker'],
+                ['docker', 'aws'],
+                ['figma', 'css3']
+            ];
+            
+            connections.forEach(([skill1, skill2]) => {
+                const node1 = document.querySelector(`[data-skill="${skill1}"]`);
+                const node2 = document.querySelector(`[data-skill="${skill2}"]`);
+                
+                if (node1 && node2) {
+                    const rect1 = node1.getBoundingClientRect();
+                    const rect2 = node2.getBoundingClientRect();
+                    const svgRect = svg.getBoundingClientRect();
+                    
+                    const x1 = rect1.left - svgRect.left + rect1.width / 2;
+                    const y1 = rect1.top - svgRect.top + rect1.height / 2;
+                    const x2 = rect2.left - svgRect.left + rect2.width / 2;
+                    const y2 = rect2.top - svgRect.top + rect2.height / 2;
+                    
+                    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    line.setAttribute('x1', x1);
+                    line.setAttribute('y1', y1);
+                    line.setAttribute('x2', x2);
+                    line.setAttribute('y2', y2);
+                    line.setAttribute('stroke', '#E8B4B8');
+                    line.setAttribute('stroke-width', '1');
+                    line.setAttribute('opacity', '0.3');
+                    
+                    svg.appendChild(line);
+                }
+            });
+        }
+
+        // Initialize connection lines on load
+        window.addEventListener('load', drawConnectionLines);
+        window.addEventListener('resize', drawConnectionLines);
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+            }
+        });
+
+        // Animate skill bars on scroll (mobile)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.mobile-skill-item .bg-primary, .mobile-skill-item .bg-secondary, .mobile-skill-item .bg-accent');
+                    progressBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.transition = 'width 1s ease-out';
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-category-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

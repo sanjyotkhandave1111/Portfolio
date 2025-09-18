@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Marketplace - Sanjyot</title>
+    <meta name="description" content="Professional web development services with transparent pricing. Custom applications, frontend specialization, and technical consulting." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevportfol2775back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="hero_landing_zone.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">DP</span>
+                        </div>
+                        <span class="font-poppins font-semibold text-lg text-text-primary">Sanjyot</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_landing_zone.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Home</a>
+                        <a href="about_narrative.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">About</a>
+                        <a href="skills_constellation.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Skills</a>
+                        <a href="services_marketplace.html" class="text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Services</a>
+                        <a href="achievement_gallery.html" class="text-text-secondary hover:text-accent font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Achievements</a>
+                        <a href="contact_command_center.html" class="btn-primary text-sm">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="bg-surface p-2 rounded-md text-text-secondary hover:text-accent hover:bg-border-light transition-colors duration-200">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border-light">
+                <a href="hero_landing_zone.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Home</a>
+                <a href="about_narrative.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">About</a>
+                <a href="skills_constellation.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Skills</a>
+                <a href="services_marketplace.html" class="text-accent block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="achievement_gallery.html" class="text-text-secondary hover:text-accent block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Achievements</a>
+                <a href="contact_command_center.html" class="btn-primary block text-center mx-3 mt-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Marketplace Header -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 via-background to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-surface px-4 py-2 rounded-full border border-border">
+                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                    </svg>
+                    <span class="text-sm font-medium text-text-secondary">Professional Services</span>
+                </div>
+                
+                <h1 class="font-poppins font-bold text-4xl sm:text-5xl lg:text-6xl text-text-primary">
+                    Services <span class="text-gradient">Marketplace</span>
+                </h1>
+                
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                    Transform your digital vision into reality with transparent pricing, clear timelines, and proven expertise. 
+                    From custom applications to technical consulting, I deliver solutions that drive results.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="flex flex-wrap justify-center gap-8 pt-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent">50+</div>
+                        <div class="text-sm text-text-secondary">Projects Delivered</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary">98%</div>
+                        <div class="text-sm text-text-secondary">Client Satisfaction</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-secondary">24h</div>
+                        <div class="text-sm text-text-secondary">Response Time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Service Categories -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Custom Web Development -->
+                <div class="card group hover:scale-105 transition-all duration-300" id="web-development-card">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-2xl text-text-primary">Custom Web Development</h3>
+                            <p class="text-text-secondary">Full-stack solutions tailored to your needs</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Full-stack web applications</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">E-commerce platforms</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">API development & integration</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Database design & optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-border pt-4 mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">Timeline:</span>
+                            <span class="font-medium text-text-primary">4-12 weeks</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary">Starting from:</span>
+                            <span class="font-poppins font-bold text-2xl text-accent" id="web-dev-price">$5,000</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary w-full group" onclick="openProjectModal('web-development')">
+                        <span>Get Quote</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Frontend Specialization -->
+                <div class="card group hover:scale-105 transition-all duration-300" id="frontend-card">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-2xl text-text-primary">Frontend Specialization</h3>
+                            <p class="text-text-secondary">Modern, responsive user interfaces</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">React/Vue.js applications</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Responsive design systems</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Performance optimization</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Cross-browser compatibility</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-border pt-4 mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">Timeline:</span>
+                            <span class="font-medium text-text-primary">2-8 weeks</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary">Starting from:</span>
+                            <span class="font-poppins font-bold text-2xl text-accent" id="frontend-price">$2,500</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-secondary w-full group" onclick="openProjectModal('frontend')">
+                        <span>Get Quote</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Consulting Services -->
+                <div class="card group hover:scale-105 transition-all duration-300" id="consulting-card">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-2xl text-text-primary">Consulting Services</h3>
+                            <p class="text-text-secondary">Expert guidance for your tech decisions</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Code reviews & audits</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Technical mentoring</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Architecture planning</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-success mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">Technology stack selection</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-border pt-4 mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">Timeline:</span>
+                            <span class="font-medium text-text-primary">1-4 weeks</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary">Hourly rate:</span>
+                            <span class="font-poppins font-bold text-2xl text-accent" id="consulting-price">$150/hr</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary w-full group" onclick="openProjectModal('consulting')">
+                        <span>Book Consultation</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Complexity Selector -->
+            <div class="bg-surface rounded-2xl p-8 mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="font-poppins font-semibold text-2xl text-text-primary mb-4">Project Complexity Calculator</h3>
+                    <p class="text-text-secondary">Adjust the complexity to see updated pricing estimates</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-text-secondary">Simple</span>
+                        <span class="text-text-secondary">Complex</span>
+                    </div>
+                    
+                    <div class="relative">
+                        <input type="range" id="complexity-slider" min="1" max="5" value="3" class="w-full h-2 bg-border rounded-lg appearance-none cursor-pointer slider" />
+                        <div class="flex justify-between text-sm text-text-secondary mt-2">
+                            <span>Basic</span>
+                            <span>Standard</span>
+                            <span>Advanced</span>
+                            <span>Premium</span>
+                            <span>Enterprise</span>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6 mt-8">
+                        <div class="text-center p-4 bg-background rounded-lg">
+                            <h4 class="font-poppins font-semibold text-lg text-text-primary mb-2">Web Development</h4>
+                            <div class="text-2xl font-bold text-accent" id="calc-web-price">$7,500</div>
+                        </div>
+                        <div class="text-center p-4 bg-background rounded-lg">
+                            <h4 class="font-poppins font-semibold text-lg text-text-primary mb-2">Frontend</h4>
+                            <div class="text-2xl font-bold text-secondary" id="calc-frontend-price">$4,000</div>
+                        </div>
+                        <div class="text-center p-4 bg-background rounded-lg">
+                            <h4 class="font-poppins font-semibold text-lg text-text-primary mb-2">Consulting</h4>
+                            <div class="text-2xl font-bold text-accent" id="calc-consulting-price">$150/hr</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Stories -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-3xl sm:text-4xl text-text-primary mb-4">
+                    Client Success Stories
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Real projects, measurable results, and satisfied clients who trust my expertise
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Success Story 1 -->
+                <div class="card">
+                    <div class="flex items-start space-x-4 mb-6">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400" alt="TechStart Inc. office" class="w-16 h-16 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-poppins font-semibold text-xl text-text-primary">TechStart Inc.</h3>
+                            <p class="text-text-secondary">E-commerce Platform Redesign</p>
+                        </div>
+                    </div>
+
+                    <p class="text-text-secondary mb-6">
+                        "The new platform increased our conversion rate by 340% and reduced page load times by 60%. 
+                        The clean, intuitive design has significantly improved our customer experience."
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-success">340%</div>
+                            <div class="text-sm text-text-secondary">Conversion Increase</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">60%</div>
+                            <div class="text-sm text-text-secondary">Faster Load Times</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent">8 weeks</div>
+                            <div class="text-sm text-text-secondary">Delivery Time</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://images.pixabay.com/photos/2017/06/26/02/47/man-2442565_960_720.jpg" alt="Michael Chen, CTO" class="w-8 h-8 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                            <div>
+                                <div class="font-medium text-text-primary text-sm">Michael Chen</div>
+                                <div class="text-text-secondary text-xs">CTO, TechStart Inc.</div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 2 -->
+                <div class="card">
+                    <div class="flex items-start space-x-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=400&auto=format&fit=crop" alt="Creative Studio workspace" class="w-16 h-16 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-poppins font-semibold text-xl text-text-primary">Creative Studio</h3>
+                            <p class="text-text-secondary">Portfolio Website & CMS</p>
+                        </div>
+                    </div>
+
+                    <p class="text-text-secondary mb-6">
+                        "Our new portfolio site has attracted 250% more qualified leads and showcases our work beautifully. 
+                        The custom CMS makes content updates effortless for our team."
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-success">250%</div>
+                            <div class="text-sm text-text-secondary">More Leads</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">95%</div>
+                            <div class="text-sm text-text-secondary">Client Satisfaction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-accent">6 weeks</div>
+                            <div class="text-sm text-text-secondary">Delivery Time</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://images.pixabay.com/photos/2016/11/21/12/42/beard-1845166_960_720.jpg" alt="Sarah Johnson, Creative Director" class="w-8 h-8 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                            <div>
+                                <div class="font-medium text-text-primary text-sm">Sarah Johnson</div>
+                                <div class="text-text-secondary text-xs">Creative Director</div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-poppins font-bold text-3xl sm:text-4xl text-text-primary mb-6">
+                Ready to Start Your Project?
+            </h2>
+            <p class="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
+                Let's discuss your vision and create something amazing together. 
+                Book a free consultation to explore how I can help bring your ideas to life.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="contact_command_center.html" class="btn-primary inline-flex items-center space-x-2 group">
+                    <span>Start Your Project</span>
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                
+                <button class="btn-secondary inline-flex items-center space-x-2 group" onclick="downloadServicesPDF()">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <span>Download Services PDF</span>
+                </button>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-8 text-sm text-text-secondary">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Free initial consultation</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Transparent pricing</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>24h response guarantee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-background rounded-2xl max-w-2xl w-full max-h-screen overflow-y-auto">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-poppins font-bold text-2xl text-text-primary" id="modal-title">Get Project Quote</h3>
+                    <button onclick="closeProjectModal()" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form id="project-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Full Name</label>
+                            <input type="text" class="input-field" placeholder="Your full name" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Email Address</label>
+                            <input type="email" class="input-field" placeholder="your@email.com" required />
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Company</label>
+                            <input type="text" class="input-field" placeholder="Your company name" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-2">Budget Range</label>
+                            <select class="input-field" required>
+                                <option value>Select budget range</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000-25000">$10,000 - $25,000</option>
+                                <option value="25000+">$25,000+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Project Description</label>
+                        <textarea class="input-field h-32" placeholder="Tell me about your project requirements, goals, and any specific features you need..." required></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Timeline</label>
+                        <select class="input-field" required>
+                            <option value>Select timeline</option>
+                            <option value="asap">ASAP</option>
+                            <option value="1-2-months">1-2 months</option>
+                            <option value="3-6-months">3-6 months</option>
+                            <option value="6+-months">6+ months</option>
+                        </select>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="submit" class="btn-primary flex-1">
+                            Send Project Request
+                        </button>
+                        <button type="button" onclick="closeProjectModal()" class="btn-secondary flex-1">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Complexity slider functionality
+        const complexitySlider = document.getElementById('complexity-slider');
+        const webPrices = [5000, 7500, 12000, 18000, 25000];
+        const frontendPrices = [2500, 4000, 6500, 9000, 12000];
+        const consultingRate = 150;
+
+        complexitySlider.addEventListener('input', (e) => {
+            const complexity = parseInt(e.target.value) - 1;
+            
+            document.getElementById('calc-web-price').textContent = `$${webPrices[complexity].toLocaleString()}`;
+            document.getElementById('calc-frontend-price').textContent = `$${frontendPrices[complexity].toLocaleString()}`;
+            document.getElementById('calc-consulting-price').textContent = `$${consultingRate}/hr`;
+        });
+
+        // Project modal functionality
+        function openProjectModal(serviceType) {
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            
+            const titles = {
+                'web-development': 'Custom Web Development Quote',
+                'frontend': 'Frontend Development Quote',
+                'consulting': 'Consulting Services Quote'
+            };
+            
+            modalTitle.textContent = titles[serviceType] || 'Get Project Quote';
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('project-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'project-modal') {
+                closeProjectModal();
+            }
+        });
+
+        // Form submission
+        document.getElementById('project-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simulate form submission
+            const submitButton = e.target.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you! Your project request has been sent. I\'ll get back to you within 24 hours.');
+                closeProjectModal();
+                e.target.reset();
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        });
+
+        // Download services PDF
+        function downloadServicesPDF() {
+            // Simulate PDF download
+            const link = document.createElement('a');
+            link.href = 'javascript:void(0)';
+            link.download = 'DevPortfolio-Pro-Services-Guide.pdf';
+            
+            // Show download notification
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-success text-white px-6 py-3 rounded-lg shadow-strong z-50 animation-slide-up';
+            notification.textContent = 'Services PDF download started!';
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
